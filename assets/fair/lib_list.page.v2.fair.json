@@ -1,0 +1,116 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar"
+    },
+    "body": {
+      "className": "GridView.builder",
+      "na": {
+        "gridDelegate": {
+          "className": "SliverGridDelegateWithFixedCrossAxisCount",
+          "na": {
+            "crossAxisCount": 3,
+            "childAspectRatio": 0.75,
+            "mainAxisSpacing": 2,
+            "crossAxisSpacing": 2
+          }
+        },
+        "itemBuilder": "%(_buildItem(^(index)))",
+        "itemCount": 10
+      }
+    }
+  },
+  "methodMap": {
+    "_buildItem": {
+      "className": "Container",
+      "na": {
+        "margin": {
+          "className": "EdgeInsets.symmetric",
+          "na": {
+            "vertical": 6,
+            "horizontal": 16
+          }
+        },
+        "decoration": {
+          "className": "BoxDecoration",
+          "na": {
+            "color": "#(Colors.white)",
+            "shape": "#(BoxShape.rectangle)",
+            "borderRadius": {
+              "className": "BorderRadius.all",
+              "pa": [
+                {
+                  "className": "Radius.circular",
+                  "pa": [
+                    6
+                  ]
+                }
+              ]
+            },
+            "boxShadow": [
+              {
+                "className": "BoxShadow",
+                "na": {
+                  "color": {
+                    "className": "Color.fromARGB",
+                    "pa": [
+                      90,
+                      226,
+                      226,
+                      226
+                    ]
+                  },
+                  "offset": {
+                    "className": "Offset",
+                    "pa": [
+                      1,
+                      1
+                    ]
+                  },
+                  "blurRadius": 5
+                }
+              },
+              {
+                "className": "BoxShadow",
+                "na": {
+                  "color": {
+                    "className": "Color.fromARGB",
+                    "pa": [
+                      90,
+                      226,
+                      226,
+                      226
+                    ]
+                  },
+                  "offset": {
+                    "className": "Offset",
+                    "pa": [
+                      1
+                    ]
+                  },
+                  "blurRadius": 5
+                }
+              }
+            ]
+          }
+        },
+        "child": {
+          "className": "Text",
+          "pa": [
+            "#($item)"
+          ],
+          "na": {
+            "style": {
+              "className": "TextStyle",
+              "na": {
+                "fontWeight": "#(FontWeight.w600)",
+                "fontSize": 18
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

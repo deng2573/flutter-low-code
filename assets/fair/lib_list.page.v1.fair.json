@@ -1,0 +1,167 @@
+{
+  "className": "Scaffold",
+  "na": {
+    "appBar": {
+      "className": "AppBar"
+    },
+    "body": {
+      "className": "ListView.builder",
+      "na": {
+        "itemBuilder": "%(_buildItem(^(index)))",
+        "itemCount": 10
+      }
+    }
+  },
+  "methodMap": {
+    "_buildItem": {
+      "className": "InkWell",
+      "na": {
+        "enableFeedback": false,
+        "onTap": "",
+        "child": {
+          "className": "Container",
+          "na": {
+            "margin": {
+              "className": "EdgeInsets.symmetric",
+              "na": {
+                "vertical": 6,
+                "horizontal": 16
+              }
+            },
+            "decoration": {
+              "className": "BoxDecoration",
+              "na": {
+                "color": "#(Colors.white)",
+                "shape": "#(BoxShape.rectangle)",
+                "borderRadius": {
+                  "className": "BorderRadius.all",
+                  "pa": [
+                    {
+                      "className": "Radius.circular",
+                      "pa": [
+                        6
+                      ]
+                    }
+                  ]
+                },
+                "boxShadow": [
+                  {
+                    "className": "BoxShadow",
+                    "na": {
+                      "color": {
+                        "className": "Color.fromARGB",
+                        "pa": [
+                          90,
+                          226,
+                          226,
+                          226
+                        ]
+                      },
+                      "offset": {
+                        "className": "Offset",
+                        "pa": [
+                          1,
+                          1
+                        ]
+                      },
+                      "blurRadius": 5
+                    }
+                  },
+                  {
+                    "className": "BoxShadow",
+                    "na": {
+                      "color": {
+                        "className": "Color.fromARGB",
+                        "pa": [
+                          90,
+                          226,
+                          226,
+                          226
+                        ]
+                      },
+                      "offset": {
+                        "className": "Offset",
+                        "pa": [
+                          1
+                        ]
+                      },
+                      "blurRadius": 5
+                    }
+                  }
+                ]
+              }
+            },
+            "child": {
+              "className": "Row",
+              "na": {
+                "children": [
+                  {
+                    "className": "Expanded",
+                    "na": {
+                      "child": {
+                        "className": "Column",
+                        "na": {
+                          "crossAxisAlignment": "#(CrossAxisAlignment.start)",
+                          "children": [
+                            {
+                              "className": "Padding",
+                              "na": {
+                                "padding": {
+                                  "className": "EdgeInsets.only",
+                                  "na": {
+                                    "left": 15,
+                                    "top": 10,
+                                    "right": 16
+                                  }
+                                },
+                                "child": {
+                                  "className": "Text",
+                                  "pa": [
+                                    "#($item)"
+                                  ],
+                                  "na": {
+                                    "style": {
+                                      "className": "TextStyle",
+                                      "na": {
+                                        "fontWeight": "#(FontWeight.w600)",
+                                        "fontSize": 18
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "className": "Padding",
+                    "na": {
+                      "padding": {
+                        "className": "EdgeInsets.only",
+                        "na": {
+                          "right": 15
+                        }
+                      },
+                      "child": {
+                        "className": "Icon",
+                        "pa": [
+                          "#(Icons.chevron_right)"
+                        ],
+                        "na": {
+                          "size": 30
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
